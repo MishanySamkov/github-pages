@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task</title>
+	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+</head>
+<body>
+	
+	<header>
+		<div class="logo" id="logotip">
+			<a  href="index.html"><img class="graficlogo" src="logo.png" alt="logo">
+		</div>
+		
+		</div>
+		<nav>
+			<div class="topnav" id="mytopnav">
+				<a href="#">HOME</a>
+				<a href="#">BLOG</a>
+				<a href="#">PROJECTS</a>
+				<a href="#">CONTACT</a>
+				<a id="menu" href="#" class="icon">&#9776 </a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="first-part">
+			<div class = "first-container">
+				<div><h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</h2>
+				</div>
+			</div>
+		</section>
+		<section class="second-part">
+		<div class="second-part-colums-container">
+			<div class="top">
+			 <img  src = "2.jpg" alt = "">
+			</div>
+			<div class="bottom">
+			<p class = "first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+			Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+			commodo consequat. </br>
+			Duis aute irure dolor in reprehenderit in voluptate
+			velit esse cillum dolore eu fugiat nulla pariatur.<br>
+			Excepteur sint occaecat
+			cupidatat non proident, 
+			sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			</div>
+		</div>
+		
+		<div class="second-part-colums-container">
+			<div class="top">
+			 <img  src = "2.jpg" alt = "">
+			</div>
+			<div class="bottom">
+			<p class = "first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+			Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+			commodo consequat. </br>
+			Duis aute irure dolor in reprehenderit in voluptate
+			velit esse cillum dolore eu fugiat nulla pariatur.<br>
+			Excepteur sint occaecat
+			cupidatat non proident, 
+			sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			</div>
+		</div>
+		
+		<div class="second-part-colums-container">
+			<div class="top">
+			 <img  src = "2.jpg" alt = "">
+			</div>
+			<div class="bottom">
+			<p class = "first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+			Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+			commodo consequat. </br>
+			Duis aute irure dolor in reprehenderit in voluptate
+			velit esse cillum dolore eu fugiat nulla pariatur.<br>
+			Excepteur sint occaecat
+			cupidatat non proident, 
+			sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			</div>
+		</div>
+		
+		</section>
+		<section class = "third-part">
+		<div class = "third-container">
+			<div><h2>Lorem ipsum </div></h2>
+			 sit amet, consectetur adipiscing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+			Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+			commodo consequat. </br>
+			Duis aute irure dolor in reprehenderit in voluptate
+			velit esse cillum dolore eu fugiat nulla pariatur.<br>
+			Excepteur sint occaecat
+			cupidatat non proident, 
+			sunt in culpa qui officia deserunt mollit anim id est laborum. 
+			
+			</div>
+		</section>
+	
+	<main>
+	<footer>
+	<?php
+$title = 'Привет, мир';
+$url = 'https://misha.blog?p=1';
+$hashtags = 'wp,wordpress';
+// обратите внимание, что некоторые из параметров я включил непосредственно в URL
+?>
+<a href="http://twitter.com/share?text=<?php echo $title; ?>
+&via=twitterfeed&related=truemisha&hashtags=<?php echo $hashtags ?>
+&url=<?php echo $url; ?>" title="Поделиться ссылкой в Твитттере" 
+onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325');
+return false" target="_parent">Твитнуть</a>
+<?php
+$title = 'Привет, мир'; // заголовок
+$summary = 'the_excerpt()'; // анонс поста
+$url = 'https://misha.blog?p=1'; // ссылка на пост
+$image_url = 'https://misha.blog/wp-content/themes/truemisha/a/apple-touch-icon-144x144-precomposed.png' // URL изображения
+?>
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]
+=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>"
+ onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325');
+ return false" title="Поделиться ссылкой на Фейсбук" target="_parent">Поделиться</a>
+ <?php
+$title = 'Привет, мир';
+$description = 'Короткое описание данной статьи, например можно использовать функцию WordPress the_excerpt()';
+$url = 'https://misha.blog?p=1';
+$image_url = 'https://misha.blog/wp-content/themes/truemisha/a/apple-touch-icon-144x144-precomposed.png'
+?>
+<a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>
+&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true"
+ onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false"
+ title="Сохранить в Вконтакте" target="_parent">Сохранить</a>
+	</footer>
+
+
+
+<script src="Script.js"></script>
+</body>
+</html>
